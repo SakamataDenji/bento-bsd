@@ -267,7 +267,8 @@ Bento is licensed under the [BSD 2-Clause License](LICENSE) - see the LICENSE fi
 
 **Built with ❤️ for the FreeBSD community!**
 
-[🌟 Star]([https://github.com/bento-bsd/bento](https://github.com/SakamataDenji/bento-bsd/) • [📖 Docs](docs/) • [🐛 Issues]([issues](https://github.com/SakamataDenji/bento-bsd/issues) 
+[🌟 Star]([https://github.com/bento-bsd/bento])
+• [📖 Docs](docs/) • [🐛 Issues](https://github.com/SakamataDenji/bento-bsd/issues) 
 • [💬 Discussions](https://github.com/SakamataDenji/bento-bsd/discussions)
 
 </div>
