@@ -6,9 +6,9 @@
 
 [![FreeBSD](https://img.shields.io/badge/FreeBSD-Compatible-red.svg)](https://www.freebsd.org/)
 [![License](https://img.shields.io/badge/License-BSD--2--Clause-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/github/workflow/status/freebsd-bento/bento/CI)](https://github.com/freebsd-bento/bento/actions)
-[![Release](https://img.shields.io/github/v/release/freebsd-bento/bento)](https://github.com/freebsd-bento/bento/releases)
-[![Downloads](https://img.shields.io/github/downloads/freebsd-bento/bento/total)](https://github.com/freebsd-bento/bento/releases)
+[![Build Status](https://img.shields.io/github/workflow/status/bento-bsd/bento/CI)](https://github.com/bento-bsd/bento/actions)
+[![Release](https://img.shields.io/github/v/release/bento-bsd/bento)](https://github.com/freebsd-bento/bento/releases)
+[![Downloads](https://img.shields.io/github/downloads/bento-bsd/bento/total)](https://github.com/bento-bsd/bento/releases)
 
 </div>
 
@@ -25,10 +25,6 @@ Bento is a **next-generation package manager** for FreeBSD that combines the pow
 - 🔧 **Pacman-Style Flags**: Familiar `-Syu` syntax beloved by Arch users
 - 🏗️ **Ports Integration**: Seamless integration with FreeBSD ports system
 
-## 📸 **Screenshots**
-
-<details>
-<summary>🎬 Click to see Bento in action</summary>
 
 ### Package Installation with Security Analysis
 ```bash
@@ -198,7 +194,7 @@ pkg install bento  # After FreeBSD ports integration
 pkg install lang/nim security/gnupg
 
 # Clone and build
-git clone https://github.com/freebsd-bento/bento.git
+git clone https://github.com/bento-bsd/bento.git
 cd bento
 make install
 
@@ -229,7 +225,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### Quick Start for Contributors
 ```bash
-git clone https://github.com/freebsd-bento/bento.git
+git clone https://github.com/bento-bsd/bento.git
 cd bento
 make debug          # Build debug version
 make test           # Run tests
@@ -245,9 +241,8 @@ make lint           # Check code quality
 
 ## 🐛 **Bug Reports & Feature Requests**
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/freebsd-bento/bento/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/freebsd-bento/bento/discussions)
-- 💬 **Community**: [FreeBSD Discord #bento](https://discord.gg/freebsd)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bento-bsd/bento/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/bento-bsd/bento/discussions)
 
 ## 📄 **License**
 
@@ -272,6 +267,6 @@ Bento is licensed under the [BSD 2-Clause License](LICENSE) - see the LICENSE fi
 
 **Built with ❤️ for the FreeBSD community!**
 
-[🌟 Star](https://github.com/freebsd-bento/bento) • [📖 Docs](docs/) • [🐛 Issues](https://github.com/freebsd-bento/bento/issues) • [💬 Discussions](https://github.com/freebsd-bento/bento/discussions)
+[🌟 Star](https://github.com/bento-bsd/bento) • [📖 Docs](docs/) • [🐛 Issues](https://github.com/bento-bsd/bento/issues) • [💬 Discussions](https://github.com/bento-bsd/bento/discussions)
 
 </div>
