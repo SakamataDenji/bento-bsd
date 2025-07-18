@@ -1,0 +1,275 @@
+.\" Manpage for bento
+.\" Contact: github.com/SakamataDenji/bento-bsd
+.TH BENTO 1 "2024" "1.0.0" "Bento Manual"
+.SH NAME
+bento \- Secure and elegant package manager for FreeBSD
+.SH SYNOPSIS
+.B bento
+[\fB\-S\fR|\fB\-R\fR|\fB\-Q\fR|\fB\-A\fR|\fB\-P\fR] [\fIoptions\fR] [\fItargets\fR]
+.br
+.B bento
+\fIcommand\fR [\fIoptions\fR] [\fItargets\fR]
+.SH DESCRIPTION
+Bento is a modern, secure, and user-friendly package manager for FreeBSD that provides advanced security features, elegant user interface, and comprehensive package management capabilities. It serves as a powerful wrapper around FreeBSD's pkg(8) system with additional security enhancements.
+.SH OPERATION FLAGS
+Bento supports pacman/yay-style flags for efficient package management:
+.SS SYNC OPERATIONS (-S)
+.TP
+.B \-S \fIpackages\fR
+Install packages from repositories
+.TP
+.B \-Sy
+Update package repositories
+.TP
+.B \-Su
+Upgrade installed packages
+.TP
+.B \-Syu
+Update repositories and upgrade system (full update)
+.TP
+.B \-Ss \fIpattern\fR
+Search for packages matching pattern
+.TP
+.B \-Si \fIpackages\fR
+Show detailed information about packages
+.TP
+.B \-Sc
+Clean package cache
+.TP
+.B \-Scc
+Deep clean cache and remove unused files
+.SS REMOVE OPERATIONS (-R)
+.TP
+.B \-R \fIpackages\fR
+Remove packages
+.TP
+.B \-Rs \fIpackages\fR
+Remove packages and their unused dependencies
+.TP
+.B \-Rn
+Remove orphaned packages (autoremove)
+.TP
+.B \-Rns \fIpackages\fR
+Complete removal including configuration files
+.SS QUERY OPERATIONS (-Q)
+.TP
+.B \-Q
+List all installed packages
+.TP
+.B \-Qi \fIpackages\fR
+Show detailed information about installed packages
+.TP
+.B \-Ql \fIpackages\fR
+List files owned by packages
+.TP
+.B \-Qo \fIfile\fR
+Find which package owns a file
+.TP
+.B \-Qt
+List orphaned packages
+.TP
+.B \-Qu
+Check for available package updates
+.TP
+.B \-Qm
+List foreign packages (not in official repositories)
+.TP
+.B \-Qn
+List native packages (from official repositories)
+.SS SECURITY OPERATIONS (-A)
+.TP
+.B \-A
+Perform complete security audit
+.TP
+.B \-As \fIpackages\fR
+Generate security report for specific packages
+.TP
+.B \-Av \fIpackages\fR
+Verify package integrity (SHA256 + PGP)
+.TP
+.B \-Ac \fICVE-ID\fR
+Search CVE database for specific vulnerability
+.TP
+.B \-Ap
+Setup PGP verification system
+.TP
+.B \-Am \fIpackages\fR
+Check package maintenance status
+.TP
+.B \-Ao
+Find obsolete packages
+.TP
+.B \-Ah
+Perform system health check
+.SS PORTS OPERATIONS (-P)
+.TP
+.B \-P \fIport\fR
+Show information about FreeBSD port
+.TP
+.B \-Ps \fIpattern\fR
+Search FreeBSD ports tree
+.TP
+.B \-Pi \fIpath\fR
+Install package from port (compile from source)
+.TP
+.B \-Pb \fIpath\fR
+Build port without installing
+.TP
+.B \-Pu
+Update FreeBSD ports tree
+.SH COMMANDS
+Alternative command syntax for compatibility:
+.SS Package Management
+.TP
+.B install \fIpackages\fR
+Install packages with security verification
+.TP
+.B remove \fIpackages\fR
+Remove packages with dependency checking
+.TP
+.B search \fIpattern\fR
+Search for packages
+.TP
+.B update
+Update package repositories
+.TP
+.B upgrade
+Upgrade installed packages
+.TP
+.B list
+List installed packages
+.TP
+.B info \fIpackage\fR
+Show package information
+.TP
+.B deps \fIpackage\fR
+Show dependency tree
+.TP
+.B clean
+Clean package cache
+.TP
+.B autoremove
+Remove orphaned packages
+.SS Security Commands
+.TP
+.B security \fIpackage\fR
+Complete security analysis
+.TP
+.B verify \fIpackage\fR
+Verify package integrity
+.TP
+.B audit
+System security audit
+.TP
+.B cve \fICVE-ID\fR
+Search CVE database
+.TP
+.B setup-pgp
+Configure PGP verification
+.SS System Commands
+.TP
+.B stats
+Show system statistics
+.TP
+.B status
+Show Bento status
+.TP
+.B health
+System health check
+.TP
+.B completion \fIshell\fR
+Install shell completion (bash/zsh/fish)
+.TP
+.B flags
+Show flag reference guide
+.TP
+.B help
+Show help information
+.TP
+.B version
+Show version information
+.SH EXAMPLES
+.SS Basic Package Operations
+.nf
+# Install Firefox
+bento install firefox
+bento \-S firefox
+
+# Remove package with dependencies
+bento remove firefox
+bento \-Rs firefox
+
+# Search for packages
+bento search editor
+bento \-Ss editor
+
+# Update system
+bento update
+bento \-Syu
+.fi
+.SS Security Operations
+.nf
+# Complete security audit
+bento audit
+bento \-A
+
+# Check package security
+bento security firefox
+bento \-As firefox
+
+# Search for specific CVE
+bento cve CVE\-2024\-1234
+bento \-Ac CVE\-2024\-1234
+
+# Setup PGP verification
+bento setup\-pgp
+bento \-Ap
+.fi
+.SH FILES
+.TP
+.I ~/.bento/
+Bento configuration and cache directory
+.TP
+.I ~/.bento/security.log
+Security events log
+.TP
+.I ~/.bento/cve_cache.json
+Local CVE database cache
+.TP
+.I ~/.bento/pgp_keys/
+PGP keyring directory
+.TP
+.I ~/.bash_completion.d/bento
+Bash completion script
+.SH EXIT STATUS
+.TP
+.B 0
+Success
+.TP
+.B 1
+General error
+.TP
+.B 2
+Security verification failure
+.TP
+.B 3
+Package not found
+.SH ENVIRONMENT VARIABLES
+.TP
+.B BENTO_NO_COLOR
+Disable colored output
+.TP
+.B BENTO_CACHE_DIR
+Override default cache directory
+.SH SEE ALSO
+.BR pkg (8),
+.BR ports (7),
+.BR make (1),
+.BR portsnap (8),
+.BR gpg (1)
+.SH BUGS
+Report bugs at: https://github.com/tu\-usuario/bento/issues
+.SH AUTHORS
+Bento Package Manager for FreeBSD
+.br
+Licensed under BSD 2\-Clause License
