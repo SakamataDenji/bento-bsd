@@ -241,8 +241,8 @@ make lint           # Check code quality
 
 ## 🐛 **Bug Reports & Feature Requests**
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bento-bsd/bento/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/bento-bsd/bento/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/SakamataDenji/bento-bsd/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/SakamataDenji/bento-bsd/discussions)
 
 ## 📄 **License**
 
