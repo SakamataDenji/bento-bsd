@@ -7,8 +7,8 @@
 [![FreeBSD](https://img.shields.io/badge/FreeBSD-Compatible-red.svg)](https://www.freebsd.org/)
 [![License](https://img.shields.io/badge/License-BSD--2--Clause-blue.svg)](LICENSE)
 [![Build Status](https://img.shields.io/github/workflow/status/bento-bsd/bento/CI)](https://github.com/bento-bsd/bento/actions)
-[![Release](https://img.shields.io/github/v/release/bento-bsd/bento)](https://github.com/freebsd-bento/bento/releases)
-[![Downloads](https://img.shields.io/github/downloads/bento-bsd/bento/total)](https://github.com/bento-bsd/bento/releases)
+[![Release](https://img.shields.io/github/v/release/bento-bsd/bento)](https://github.com/SakamataDenji/bento-bsd/releases)
+[![Downloads](https://img.shields.io/github/downloads/bento-bsd/bento/total)](https://github.com/SakamataDenji/bento-bsd/releases)
 
 </div>
 
@@ -267,6 +267,7 @@ Bento is licensed under the [BSD 2-Clause License](LICENSE) - see the LICENSE fi
 
 **Built with ❤️ for the FreeBSD community!**
 
-[🌟 Star](https://github.com/bento-bsd/bento) • [📖 Docs](docs/) • [🐛 Issues](https://github.com/bento-bsd/bento/issues) • [💬 Discussions](https://github.com/bento-bsd/bento/discussions)
+[🌟 Star]([https://github.com/bento-bsd/bento](https://github.com/SakamataDenji/bento-bsd/) • [📖 Docs](docs/) • [🐛 Issues]([issues](https://github.com/SakamataDenji/bento-bsd/issues) 
+• [💬 Discussions](https://github.com/SakamataDenji/bento-bsd/discussions)
 
 </div>
